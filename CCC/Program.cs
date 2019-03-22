@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 namespace CCC
 {
@@ -11,6 +12,7 @@ namespace CCC
             try
             {
                 var lines = File.ReadAllLines(Filename);
+                var linesList = lines.ToList();
 
                 for (int i = 0; i < lines.Length; i++)
                 {
